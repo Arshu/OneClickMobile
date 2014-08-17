@@ -158,7 +158,7 @@ Major Feature complete Beta Pre-release tested in Windows and MacOsX. *Testing i
 		A Keystore/p12 key which is used for signing the Android App will be auto generated using the default password configured in the Configuration File and stored in the Keys directory under the Runtime directory.
 	</li>
 	<li>
-		Even though app.web.v1.ipa gets generated, it will not be unsigned since the Identify and password are not configured and hence cannot be directly installed into IOS Device.
+		Even though app.web.v1.ipa gets generated, it will be unsigned since the Identify and password are not configured and hence cannot be directly installed into IOS Device.
 	</li>
 	<li>
 		* A CSR File and a Private Key file will be generated under Keys directory using the default password configured in the Configuration File. This CSR file can be upload to Apple IOS Developer Site to get a Signed Developer Certificate which can be again copied to the Keys directory for the system to merge the Certificate and Private Key to generate a P12 File which can be used to codesign IOS Apps. 
