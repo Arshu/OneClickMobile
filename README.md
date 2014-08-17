@@ -203,6 +203,8 @@ Major Feature complete Beta Pre-release tested in Windows and MacOsX. *Testing i
 
 ![VerifyPackingLog]
 
+Output of the OneClickMobile tool when run first time will generate the OneClickMobileConfig.txt file for configuration and the License file to submit to get a Basic or Enterprise signed license file
+
 ![VerifyPackingOutput]
 
 ## Getting Started
@@ -220,13 +222,10 @@ Prepare your WebApp as a Zip File with the Index.html file in the root directory
 		Configure for Android using OneClickMobileConfig.txt:
 		<ul>
 			<li>
-				Set WebAppFilePath
+				Set Input WebAppFilePath
 			</li>
 			<li>
-				Set IOSSignIdentity to Developer Identity in KeyChain
-			</li>
-			<li>
-				Set IOSProvisioningFilePath to the Mobile Provisioning File Path
+				Optional Configure KeyStore Generation Options for Auto Generation of New Keystore or Optional Set the Keystore Path, Password and Alias to use your existing keystore.
 			</li>
 		</ul
 	</li>
@@ -252,22 +251,30 @@ Prepare your WebApp as a Zip File with the Index.html file in the root directory
 
 <ol class="list">
     <li>
+		Download your development certificate from Apple and Install it into your Keychain (Mac)
+    </li>
+    <li>
+		Download your mobile provisioning profile and save it into the Keys Folder under the Runtime Directory. 
+	</li>
+	<li>
+		Configure for IOS Apple CodeSign using OneClickMobileConfig.txt:
+		<ul>
+			<li>
+				Set Input WebAppFilePath
+			</li>
+			<li>
+				Set IOSSignIdentity to Developer Identity in KeyChain (Will auto encrypt in Config File)
+			</li>
+			<li>
+				Set IOSProvisioningFilePath to the Mobile Provisioning File Path
+			</li>
+		</ul
+	</li>
+    <li>
 		Run the Tool by Clicking the OneClickMobile.exe/OneClickMobile.command in Windows/Mac respectively
 		<ol>         
 			<li>
 				Use the Terminal program in Mac/Linux to change mode the OneClickMobile.command file to have execute permission (chmod 755 OneClickMobile.command) 
-			</li>
-	        <li>
-				Download your development certificate from Apple and Install it into your Keychain (Mac) and export it into a P12 file and copy to the Keys folder under the Runtime Directory
-	        </li>
-	        <li>
-				Download your mobile provisioning profile and save it into the Keys Folder under the Runtime Directory. 
-			</li>
-	        <li>
-				Configure your OneClickMobileConfig.txt file with the Partial Signing Identity and the Path to the Mobile Provisioning profile. 
-			</li>
-			<li>
-				Alternate In Windows Configure the OneClickMobileConfig.txt file with the IOS Identify p12 file with password and the path to the Mobile Provisioning profile 
 			</li>
 		</ol>
     </li>
@@ -275,16 +282,109 @@ Prepare your WebApp as a Zip File with the Index.html file in the root directory
 		The tool will pack the example WebApp in InputWebApp with the Provided Free IPA Runtime and generate an Apple App (*.ipa) in the OutputIOSApp folder. 
 	</li>
     <li>
-		Connect your IPhone to your PC/Notebook and click the generated IPA file to open in ITunes and install in your IPhone. 
+		Connect your IPhone to your PC/Notebook and click the generated IPA file to open in ITunes and install in your IPhone or click the install batch file to install
 	</li>
-    <li>
-		Modify the provided example Html Web App and generate your own app by redoing the packaging.
-    </li>
 </ol>
 
-##
+## Getting Started (IOS) (Windows)
 
-![ConfigureSignCustom]
+![ConfigureSignIOSCustom]
+
+<ol class="list">    
+    <li>
+		Download your mobile provisioning profile and save it into the Keys Folder under the Runtime Directory. 
+	</li>
+	<li>
+		Configure for IOS Custom CodeSign using OneClickMobileConfig.txt:
+		<ul>
+			<li>
+				Set Input WebAppFilePath
+			</li>
+			<li>
+				Set IOSSignKeyFilePath to a P12 file of the Developer Certificate
+			</li>
+			<li>
+				Set IOSSignKeyPassword of the P12 file ((Will auto encrypt in Config File)
+			</li>
+			<li>
+				Set IOSProvisioningFilePath to the Mobile Provisioning File Path
+			</li>
+		</ul
+	</li>
+    <li>
+		Run the Tool by Clicking the OneClickMobile.exe/OneClickMobile.command in Windows/Mac respectively
+		<ol>         
+			<li>
+				Use the Terminal program in Mac/Linux to change mode the OneClickMobile.command file to have execute permission (chmod 755 OneClickMobile.command) 
+			</li>
+		</ol>
+    </li>
+    <li>
+		The tool will pack the example WebApp in InputWebApp with the Provided Free IPA Runtime and generate an Apple App (*.ipa) in the OutputIOSApp folder. 
+	</li>
+    <li>
+		Connect your IPhone to your PC/Notebook and click the generated IPA file to open in ITunes and install in your IPhone or click the install batch file to install
+	</li>
+</ol>
+
+## Generation of Keystore/P12 file for Android Signing
+
+<ol>
+    <li>
+		The OneClickMobile Packager will generate a Keystore file using keytool if the parameters required for Keystore generation are configured in the OneClickMobileConfig.txt file and keytool is installed		
+	</li>	
+	<li>
+		The OneClicMobile Packager will also generate a p12 keystore file if the parameters required for Keystore geneneration are configured in the OneClickMobileConfig.txt file
+	</li>
+	<li>
+		The main parameters required to be configured are 
+		<ul>
+			<li>
+				AndroidKeyStorePwd (Will auto encrypt in Config File)
+			</li>
+			<li>
+				AndroidKeyPwd (Will auto encrypt in Config File)
+			</li>
+			<li>
+				AndroidKeyAlias 
+			</li>
+			<li>
+				AndroidDistinguishedName
+			</li>			
+			<li>
+				AndroidKeyValidity
+			</li>
+		</ul
+	</li>
+</ol>
+
+## Generation of P12 file for IOS Signing in Windows
+
+<ol>
+    <li>
+		A P12 file can be exported from KeyChain of Mac having the developer identity and used in windows
+	</li>
+	<li>
+		OneClickMobile will auto generate a Private Key and CSR for submiting to Apple IOS Developer Center to get a Developer Identity Certificate
+	</li>
+	<li>
+		The main parameters required to be configured are 
+		<ul>
+			<li>
+				IOSSignKeyPassword (Will auto encrypt in Config File)
+			</li>
+			<li>
+				IOSSignEmail
+			</li>
+			<li>
+				IOSSignCommonName
+			</li>
+		</ul
+	</li>
+	<li>
+		Once the Developer certificate is copied to the Keys directory having the same name as the CSR Certificate with a Cert Extension, the OneClickMobile Tool will merge the Private Key of the CSR and the Developer Certificate to generate a P12 file secured using the configured password		
+	</li>
+</ol>
 
 ## Difference from PhoneGAP/Cordova
 
@@ -385,7 +485,7 @@ Prepare your WebApp as a Zip File with the Index.html file in the root directory
 [VerifyPackingLog]: https://raw.github.com/Arshu/OneClickMobile/master/Images/VerifyPackingLog.png "Verify Packing Log"
 
 
-[ConfigureInputWebApp]: https://raw.github.com/Arshu/OneClickMobile/master/Images/ConfigureInputWebApp.png "Verify Packing Log"
+[ConfigureInputWebApp]: https://raw.github.com/Arshu/OneClickMobile/master/Images/ConfigureInputWebAppFilePath.png "Configure Input Web App"
 
 
 [ConfigureSignAndroid]: https://raw.github.com/Arshu/OneClickMobile/master/Images/ConfigureSignAndroid.png "Configure Sign Android"
