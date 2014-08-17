@@ -48,7 +48,7 @@ It is part of toolkit for developing Portable Apps. Portable Apps are Apps (UI, 
 
 ## Status of the Tool
 
-Major Feature complete Beta Pre-release which works but still requires extensive testing. *Testing in linux of the various command line utilities is required.
+Major Feature complete Beta Pre-release tested in Windows and MacOsX. *Testing in linux of the various command line utilities is pending. The App Web Runtime for packing web apps is alpha quality.
 
 ## Prerequisites
 
@@ -374,7 +374,7 @@ Prepare your WebApp as a Zip File with the Index.html file in the root directory
 	</li>
 </ol>
 
-[OneClickMobile]: https://raw.github.com/Arshu/OneClickMobile/master/OneClickMobile.png "One Click Mobile"
+[OneClickMobile]: https://raw.github.com/Arshu/OneClickMobile/master/Images/OneClickMobile.png "One Click Mobile"
 
 [VerifyInstallation]: https://raw.github.com/Arshu/OneClickMobile/master/Images/VerifyInstallation.png "Verify Installation"
 
