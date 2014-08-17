@@ -105,6 +105,9 @@ Major Feature complete Beta Pre-release tested in Windows and MacOsX. *Testing i
 	<li>
 		Can also install the other AppWeb Runtimes to verify successfull installation
 	</li>
+	<li>
+		Warning : Android 4 and above requires <strong>WIFI to be ON</strong> for the webview to load the Web Page. IOS does not not suffer from this limitation.
+	</li>
 </ol>
 
 ![VerifyPacking]
