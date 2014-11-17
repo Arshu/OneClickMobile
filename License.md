@@ -7,21 +7,7 @@
         {
             list-style-type:none;
         }
-    </style>
-    <script type="text/javascript">
-        function toggleDisplay(showHideElmId) {
-            var showHideElm = document.getElementById(showHideElmId);
-            if (showHideElm) {
-                if ((showHideElm.style.display.trim() === 'block')
-                    || (showHideElm.style.display.trim().length == 0)) {
-                    showHideElm.style.display = 'none';
-                }
-                else if (showHideElm) {
-                    showHideElm.style.display = 'block';
-                }
-            }
-        }
-    </script>
+    </style>    
 </head>
 <body>
 
@@ -41,11 +27,11 @@ Native Apps are created by packing portable apps into portable app runtimes usin
 
 #Open Source Used in One Click Packer
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('AndroidXml');">Android XML parser for .NET (MIT License)</a></h3>
+<h3>Android XML parser for .NET (MIT License)</h3>
 
 Implemented Writing Android Manifest changes to the Original Files</span>
 
-<div id="AndroidXml" style="display: none;">
+<div id="AndroidXml">
 
 Copyright (c) 2012 Markus Jarderot
 
@@ -63,11 +49,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('sharpZip');">SharpZipLib (GPL Licensed with Exception)</a></h3>
+<h3>SharpZipLib (GPL Licensed with Exception)</h3>
 
 Uses only the Zip related code
 
-<div id="sharpZip" style="display: none;">
+<div id="sharpZip">
 
 The library is released under the GPL with the following exception:
 
@@ -82,10 +68,10 @@ Bottom line In plain English this means you can use this library in commercial c
 
 #Open Source Used in Arshu Web
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('LibLZF');">LibLZF Port (BSD Licensed)</a></h3>
+<h3>LibLZF Port (BSD Licensed)</h3>
 
 No Changes have been done to the Original Files
-<div id="LibLZF" style="display: none;">
+<div id="LibLZF">
                       
 Improved version to C# LibLZF Port:
 <br />
@@ -121,36 +107,35 @@ Alternatively, the contents of this file may be used under the terms of the GNU 
 
 
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('bcrypt');">BCrypt (BSD Licensed)</a></h3>
+<h3>BCrypt (BSD Licensed)</h3>
 
 Minor Changes have been done to the Original Files to support WinRT
 
-<div id="bcrypt" style="display: none;">
+<div id="bcrypt">
 
 <br />
 BCrypt.net is an implementation of OpenBSD's Blowfish-based password hashing code, described in "A Future-Adaptable Password Scheme" by Niels Provos and David Mazières. It is a direct port of jBCrypt by Damien Miller, and is thus released under the same BSD-style license
 
 </div>
                     
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('ZipStorer');">ZipStorer, by Jaime Olivares. (Public Domain)</a></h3>
+<h3>ZipStorer, by Jaime Olivares. (Public Domain)</h3>
 
 Minor Changes have been done to the Original Files to support LZF Compression
 
-<div id="ZipStorer" style="display: none;">
+<div id="ZipStorer">
 
 The code/library supplied is totally free for either personal or commercial use, with no warranties.
 
 <br />
 Please use the "Powered by ZipStorer" logo (below) wherever is possible, pointing to this site Website: <span><a href="zipstorer.codeplex.com">zipstorer.codeplex.com</a></span><span><a href="http://www.codeproject.com/KB/recipes/ZipStorer.aspx">http://www.codeproject.com/KB/recipes/ZipStorer.aspx</a></span>Version: 2.35 (March 14, 2010)
-<img alt="Powered By ZipStored" src="PoweredByZipStorer.png" />
 
 </div>
                            
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('jsmin');">Javascript Minifier (jsmin.cs) (Public Domain)</a></h3>
+<h3>Javascript Minifier (jsmin.cs) (Public Domain)</h3>
 
 Minor Changes have been done to the Original Files
 
-<div id="jsmin" style="display: none;">
+<div id="jsmin">
 
 Originally written in 'C', this code has been converted to the C# language. The author's copyright message is reproduced below. All modifications from the original to C# are placed in the public domain.
 <br />
@@ -181,11 +166,11 @@ Skip Stripping for /*! ....@*/, /*@cc_on@*/ /*@end@*/
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('ReflectionUtils');">ReflectionUtils.cs Apache License v2.0</a></h3>
+<h3>ReflectionUtils.cs Apache License v2.0</h3>
 
 No Changes have been done to the Original Files
 
-<div id="ReflectionUtils" style="display: none;">
+<div id="ReflectionUtils">
 
 Copyright (c) 2011, The Outercurve Foundation. 
 
@@ -201,11 +186,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('simpleJson');">SimpleJson.cs MIT License</a></h3>
+<h3>SimpleJson.cs MIT License</h3>
                    
 Minor Enhancements have been done to the Original Files</span>
 
-<div id="simpleJson" style="display: none;">
+<div id="simpleJson">
 
 <br />
 Copyright (c) 2011, The Outercurve Foundation.
@@ -221,11 +206,11 @@ author :  <span><a href="https://github.com/facebook-csharp-sdk/simple-json">Nat
                            
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('JSONRPC');">JSON-RPC.Net MIT License</a></h3>
+<h3>JSON-RPC.Net MIT License</h3>
 
 Major Changes have been done to the Original Files to Remove NewtonSoft and Use SimpleJson</span>
                     
-<div id="JSONRPC" style="display: none;">
+<div id="JSONRPC">
 <br />
 <span><a href="http://jsonrpc2.codeplex.com">http://jsonrpc2.codeplex.com</a></span>
 <br />
@@ -241,11 +226,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('Zlib');">Zlib.cs Microsoft Public License</a></h3>
+<h3>Zlib.cs Microsoft Public License</h3>
 
 No Changes have been done to the Original Files</span>
 
-<div id="Zlib" style="display: none;">
+<div id="Zlib">
 
 Copyright (c) 2009-2011 Dino Chiesa and Microsoft Corporation.All rights reserved.
 <br />
@@ -288,11 +273,11 @@ Mark Adler madler@alumni.caltech.edu
                             
 #Open Source Used in Arshu Data
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('PetaPoco');">PetaPoco v4.0.3/v5 Apache License</a></h3>
+<h3>PetaPoco v4.0.3/v5 Apache License</h3>
 
 Changes have been done to the Original Files to Revert to Use Reflection instead of Reflection.Emit and Remove Configuration Dependence so as to make it work in Android/IOS environments
 
-<div id="PetaPoco" style="display: none;">
+<div id="PetaPoco">
 
 <br />
 PetaPoco v4.0.3/v5 - A Tiny ORMish thing for your POCO's.
@@ -311,10 +296,10 @@ Modification Copyright © 2011 Arshu Consultancy.  All Rights Reserved. Modifica
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('Protocol');">Protocol Buffers BSD/Apache License</a></h3>
+<h3>Protocol Buffers BSD/Apache License</h3>
 
 No Changes have been done to the Original Files
-<div id="Protocol" style="display: none;">
+<div id="Protocol">
 
 <br />
 The core Protocol Buffers technology is provided courtesy of Google. At the time of writing, this is released under the BSD license. Full details can be found here: <span><a href="http://code.google.com/p/protobuf/">http://code.google.com/p/protobuf/</a></span>
@@ -331,10 +316,10 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('subsonic');">Subsonic - T4 Templates (BSD Licensed)</a></h3>
+<h3>Subsonic - T4 Templates (BSD Licensed)</h3>
 
 Minor Changes have been done
-<div id="subsonic" style="display: none;">
+<div id="subsonic">
 <br />
 The <span><a href="http://subsonicproject.com">SubSonic</a></span> T4 Templates are Used
 <br />
@@ -344,11 +329,11 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('monoprovider');">Mono Class Libraries - Provider(s) (MIT Licensed)</a></h3>
+<h3>Mono Class Libraries - Provider(s) (MIT Licensed)</h3>
 
 Changes have been done to Support Android/IOS/WP Environments
 
-<div id="monoprovider" style="display: none;">
+<div id="monoprovider">
 
 <br />
 The <span><a href="http://www.mono-project.com/FAQ:_Licensing">class libraries</a></span> developed by the Mono team are licensed under the MIT X11 terms 
@@ -358,10 +343,10 @@ The <span><a href="http://www.mono-project.com/FAQ:_Licensing">class libraries</
 #Open Source (s) Used in Mono System.Web
 
 <h3>
-<a href="javascript:void(0);" onclick="javascript:toggleDisplay('mono');">Mono Class Libraries - System.Web (MIT Licensed)</a>
+Mono Class Libraries - System.Web (MIT Licensed)
 </h3>
 Extensive Changes have been done to Support Android/IOS/WP Environments
-<div id="mono" style="display: none;">
+<div id="mono">
 
 <br />
 The <span><a href="http://www.mono-project.com/FAQ:_Licensing">class libraries</a></span> developed by the Mono team are licensed under the MIT X11 terms 
@@ -370,11 +355,11 @@ The <span><a href="http://www.mono-project.com/FAQ:_Licensing">class libraries</
 
 #Open Source Used in Web Component(s)
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('pushsharp');">PushSharp (Apache License)</a></h3>
+<h3>PushSharp (Apache License)</h3>
 
 Minor Changes have been done
 
-<div id="pushsharp" style="display: none;">
+<div id="pushsharp">
 
 <br />
 The <span><a href="https://github.com/Redth/PushSharp.git">Push Sharp</a></span>is distributed under the Apache license.
@@ -387,10 +372,10 @@ This product includes software developed at The Apache Software Foundation (http
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('jquery');">JQuery /JQuery Mobile (MIT License)</a></h3>
+<h3>JQuery /JQuery Mobile (MIT License)</h3>
 No Changes have been done
 
-<div id="jquery" style="display: none;">
+<div id="jquery">
 <br />
 
 The <span><a href="http://jquery.org/license/">JQuery/JQuery Mobile </a></span>is distributed under the permissive MIT license.
@@ -398,10 +383,10 @@ The <span><a href="http://jquery.org/license/">JQuery/JQuery Mobile </a></span>i
 </div>
 
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('jqueryplugin');">Various Plugins (MIT License)</a></h3>
+<h3>Various Plugins (MIT License)</h3>
 
 No Changes have been done
-<div id="jqueryplugin" style="display: none;">
+<div id="jqueryplugin">
 
 <br />
 The Plugins Used are distributed under the permissive MIT license.
@@ -409,9 +394,9 @@ The Plugins Used are distributed under the permissive MIT license.
 </div>
 
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('jqplot');">JQPlot (MIT License)</a></h3>
+<h3>JQPlot (MIT License)</h3>
 No Changes have been done
-<div id="jqplot" style="display: none;">
+<div id="jqplot">
 <br />
 The JQPlot Library Used are distributed under the permissive MIT license.
 <br />
@@ -428,11 +413,11 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('signalr');">Signal R (MIT License)</a></h3>
+<h3>Signal R (MIT License)</h3>
 
 Using Old Version with Modification
 
-<div id="signalr" style="display: none;">
+<div id="signalr">
 
 <br />
 >Copyright (c) 2011 David Fowler & Damian Edwards
@@ -453,19 +438,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #Open Source Used in OpenGL Arshu.GUI
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('opentk');">OpenTK (MIT/X11 license )</a></h3>
+<h3>OpenTK (MIT/X11 license )</h3>
 
 No Changes have been done
-<div id="opentk" style="display: none;">
+<div id="opentk">
 
 The <span> <a href="http://www.opentk.com/">Open Toolkit </a></span>is distributed under the permissive MIT/X11 license and is absolutely free.
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('gwen');">Gwen C++ (MIT License)</a></h3>
+<h3>Gwen C++ (MIT License)</h3>
 No Changes have been done
 
-<div id="gwen" style="display: none;">
+<div id="gwen">
 
 Copyright (c) Garry Newman garrynewman@gmail.com
 <br />
@@ -474,10 +459,10 @@ Copyright (c) Garry Newman garrynewman@gmail.com
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('gwendotnet');">Gwen C# (MIT License)</a></h3>
+<h3>Gwen C# (MIT License)</h3>
 
 Major Changes have been done
-<div id="gwendotnet" style="display: none;">
+<div id="gwendotnet">
 
 Copyright (c) <a href="http://omeg.pl/blog/">omeg</a>
 <br />
@@ -485,10 +470,10 @@ Copyright (c) <a href="http://omeg.pl/blog/">omeg</a>
 
 </div>
 
-<h3><a href="javascript:void(0);" onclick="javascript:toggleDisplay('crossgraphics');">CrossGraphics (MIT License)</a></h3>
+<h3>CrossGraphics (MIT License)</h3>
 Minor Changes have been done
 
-<div id="crossgraphics" style="display: none;">
+<div id="crossgraphics">
 
 The code is copyright Frank A. Krueger and is released under the MIT license.
 <br />
